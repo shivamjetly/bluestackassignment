@@ -1,7 +1,7 @@
 import os
 import re
 
-with open("C:/Users/nikal/Downloads/Assignment2/start_assignment.log", encoding='utf8') as d:
+with open("C:/Users/sjetly/Downloads/Assignment2/start_assignment.log", encoding='utf8') as d:
     f = d.read()
     try:
         # Finding string "beginning of assignment"
@@ -17,7 +17,7 @@ with open("C:/Users/nikal/Downloads/Assignment2/start_assignment.log", encoding=
     except():
         print("Match not found")
 
-directory = "C:/Users/nikal/Downloads/Assignment2/Logs/"
+directory = "C:/Users/sjetly/Downloads/Assignment2/Logs/"
 for root, dirs, files in os.walk(directory):
     for basename in files:
         if re.search('required_pattern_\d\d', basename):
